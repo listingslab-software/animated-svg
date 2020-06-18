@@ -1,0 +1,36 @@
+/* animated-svg.css */
+
+.animatedSVG {
+	border: 1px solid #eee;
+	padding: 8px;
+}
+
+.animatedSVG {
+	color: #333;
+}
+
+
+.animatedSVG a {
+	padding: 8px;
+	text-decoration: none;
+	color: #222;
+}
+
+.animatedSVG a:hover {
+	text-decoration: none;
+	color: #444;
+	background-color: #eee;
+}
+
+.animatedSVG .nav {
+	/*border: 1px solid red;*/
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+.animatedSVG .nav li {
+	
+	margin: 8px;
+	display:inline;
+}
