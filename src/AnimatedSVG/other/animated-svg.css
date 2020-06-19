@@ -1,0 +1,51 @@
+/* animated-svg.css */
+
+
+.animatedSVG a {
+	padding: 8px;
+	text-decoration: none;
+	color: #222;
+}
+
+.animatedSVG a:hover {
+	text-decoration: none;
+	color: #444;
+	/*background-color: #eee;*/
+}
+
+
+.animatedSVG .displayFixed {
+	border: 1px solid rgba(0, 0, 0, 0.25);
+}
+
+.animatedSVG .displayResponsive {
+	border: 1px solid rgba(0, 0, 0, 0.25);
+}
+
+.animatedSVG .stuff {
+	border: 1px solid green;
+}
+
+.animatedSVG {
+	/*border: 1px solid #eee;*/
+	padding: 8px;
+}
+
+.animatedSVG {
+	color: #333;
+}
+
+.animatedSVG .nav {
+	/*border: 1px solid red;*/
+	list-style: none;
+	padding: 0;
+	padding-bottom: 16px;
+	padding-top: 16px;
+	margin: 0;
+	margin-top: 8px;
+}
+
+.animatedSVG .nav li {
+	margin: 8px;
+	display:inline;
+}

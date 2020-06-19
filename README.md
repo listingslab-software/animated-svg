@@ -46,3 +46,9 @@ Here are some of the things CSS needs to do
 }
 ```
 
+Oh yeh, and sometimes we have used inline jss kind of styles as a quick and 
+dirty way of being able to apply styles conditionally when needed
+
+```javascript
+<div style={{ width: 400, height: 500 }}
+```

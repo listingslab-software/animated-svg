@@ -15,9 +15,10 @@ import * as serviceWorker from './serviceWorker';
 ReactDOM.render(
   <React.StrictMode>
     <AnimatedSVG options={{
-    	display: 'fixed', // || responsive
-      height: 200,
-    	width: 600,
+    	display: 'responsive', // responsive || fixed
+      width: 800,
+      height: 450,
+    	
     }} />
   </React.StrictMode>,
   document.getElementById('root')

@@ -1,7 +1,8 @@
-import React from "react";
-const Github = props => {
+import React from 'react'
+
+const GithubSVG = props => {
     const { color } = props;
-    let c = `#ffffff`;
+    let c = `#000`;
     if (color) {
         c = color;
     }
@@ -19,4 +20,4 @@ const Github = props => {
         </React.Fragment>
     )
 };
-export default Github
+export default GithubSVG
