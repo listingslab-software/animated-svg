@@ -12,10 +12,12 @@
     "react-scripts": "3.4.1"
   },
   "scripts": {
+    "_": "animated-svg",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "deploy": "react-scripts build && firebase deploy"
   },
   "eslintConfig": {
     "extends": "react-app"

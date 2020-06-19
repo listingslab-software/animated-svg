@@ -37,18 +37,15 @@ PropTypes, No typing because this is JavaScript and and that stuff is boring
 Importing vanilla CSS into the component is the simplest way we can think of to 
 add the style AnimatedSVG needs, not the best. 
 You can implement these styles in whichever way suits you. 
-Here are some of the things CSS needs to do
 
-```css
-.animatedSVG {
-	border: 1px solid red;
-	margin: 8px;
-}
-```
-
-Oh yeh, and sometimes we have used inline jss kind of styles as a quick and 
+And sometimes we have used inline jss kind of styles as a quick and 
 dirty way of being able to apply styles conditionally when needed
 
 ```javascript
-<div style={{ width: 400, height: 500 }}
+<div 
+    className={ display === `fixed` ? `displayFixed` : `displayResponsive` }
+    style={{ 
+        width: display === `fixed` ? width : `100%`,
+        height,
+    }}>
 ```
