@@ -32,7 +32,7 @@ PropTypes, No typing because this is JavaScript and and that stuff is boring
 
 ### Style
 
-[/src/AnimatedSVG/animated-svg.css](./src/AnimatedSVG/animated-svg.css)
+[/src/AnimatedSVG/other/animated-svg.css](./src/AnimatedSVG/other/animated-svg.css)
 
 Importing vanilla CSS into the component is the simplest way we can think of to 
 add the style AnimatedSVG needs, not the best. 
