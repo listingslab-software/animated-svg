@@ -2,11 +2,14 @@
 
 import AnimatedSVG from './AnimatedSVG'
 
-import GithubSVG from './SVG/GithubSVG'
-import ListingslabSVG from './SVG/ListingslabSVG'
+import Github from './SVG/Github'
+import Listingslab from './SVG/Listingslab'
+import ScrollingWorld from './SVG/ScrollingWorld'
 
 export {
   AnimatedSVG,
-  GithubSVG,
-  ListingslabSVG,
+  
+  Github,
+  Listingslab,
+  ScrollingWorld,
 }

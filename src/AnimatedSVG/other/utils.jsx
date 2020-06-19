@@ -1,14 +1,12 @@
 /*
 	utils.js 
-
 	Bits and bobs that aren't really needed
 	and I'm tired of looking at
-
 */
 import React from 'react'
 import { 
-    GithubSVG,
-    ListingslabSVG,
+    Github,
+    Listingslab,
 } from '../' 
 
 export const getNav = () => {
@@ -19,17 +17,19 @@ export const getNav = () => {
                             AnimatedSVG &trade; 
                         </a>
                     </li>
+
+
                     <li>
-                    	<a href={`https://github.com/listingslab-software/animated-svg`} 
-                    		target={`_blank`}
-                    		rel={`nofollow`}>
+                        <a href={`https://listingslab.com`} 
+                            target={`_blank`}
+                            rel={`nofollow`}>
                             <span
                                 style={{
                                     width: 25,
                                     height: 25,
                                 }}
                             >
-                                <GithubSVG
+                                <Listingslab
                                     color={`rgba(0, 0, 0, 0.25)`}
                                     style={{
                                         width: 20,
@@ -42,7 +42,7 @@ export const getNav = () => {
                     </li>
 
                     <li>
-                        <a href={`https://listingslab.com`} 
+                        <a href={`https://github.com/listingslab-software/animated-svg`} 
                             target={`_blank`}
                             rel={`nofollow`}>
                             <span
@@ -51,7 +51,7 @@ export const getNav = () => {
                                     height: 25,
                                 }}
                             >
-                                <ListingslabSVG
+                                <Github
                                     color={`rgba(0, 0, 0, 0.25)`}
                                     style={{
                                         width: 20,

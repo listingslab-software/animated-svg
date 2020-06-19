@@ -1,6 +1,6 @@
 import React from 'react'
 
-const ListingslabSVG = props => {
+const Listingslab = props => {
     
     const { color } = props
     let c = `#000`
@@ -25,4 +25,4 @@ const ListingslabSVG = props => {
     )
 }
 
-export default ListingslabSVG
+export default Listingslab

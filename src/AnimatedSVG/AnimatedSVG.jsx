@@ -33,23 +33,17 @@ export default function AnimatedSVG(props) {
         return null
     }
     return	<div className={`animatedSVG`}>
-
-                { getNav() }
-
-    			<a href={`/`} onClick={(e) =>{ 
-                    e.preventDefault()
-                    setDebug(!debug)
-                }}>{ !debug ? null : `Stop debugging`}</a>
-
-                {debug ? <pre>{ JSON.stringify(options, null, 2) }</pre> : null }
-
                 <div style={{ 
                         width: display === `fixed` ? width : `100%`,
                         height,
                     }}
                     className={ display === `fixed` ? `displayFixed` : `displayResponsive` }>
                 </div>
-
+                { getNav() }
+                <a href={`/`} onClick={(e) =>{ 
+                    e.preventDefault()
+                    setDebug(!debug)
+                }}>{ !debug ? null : `Stop debugging`}</a>
+                { debug ? <pre>{ JSON.stringify(options, null, 2) }</pre> : null }
 			</div>
-
 }	
