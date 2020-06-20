@@ -3,6 +3,7 @@
 .firebase
 .firebaserc
 firebase.json
+src/AnimatedSVG/vector-art
 
 # dependencies
 /node_modules
