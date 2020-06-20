@@ -7,7 +7,7 @@ import React from 'react'
 import { 
     Github,
     Listingslab,
-} from '../' 
+} from './' 
 
 export const getNav = () => {
 	return	<React.Fragment>

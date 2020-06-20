@@ -14,12 +14,12 @@ import * as serviceWorker from './serviceWorker';
 
 ReactDOM.render(
   <React.StrictMode>
-    <AnimatedSVG options={{
-    	display: 'responsive', // responsive || fixed
-      width: 800,
-      height: 450,
-    	
-    }} />
+    <AnimatedSVG 
+      options={{
+      	display: 'fixed', // responsive || fixed
+        width: 800,
+        height: 450,
+      }}/>
   </React.StrictMode>,
   document.getElementById('root')
 );

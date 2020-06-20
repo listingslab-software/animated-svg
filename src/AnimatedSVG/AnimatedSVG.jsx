@@ -1,11 +1,11 @@
 import pJSON from '../../package.json'
-import React, { useState } from 'react'
-import './other/animated-svg.css'
+import React, { useState, useEffect } from 'react'
+import './style.css'
 import {
     getNav,
-} from './other/utils'
-
+} from './utils'
 import {
+    animateScrollingWorld,
     ScrollingWorld,
 } from './'
 
@@ -27,36 +27,40 @@ export default function AnimatedSVG(props) {
     }
 
     const [debug, setDebug] = useState(false)
-
+    useEffect(() => {
+        animateScrollingWorld(`first`, `#scrollingWorld`)    
+    })
     if (!options) {
         console.warn ('You need to pass <AnimatedSVG /> an options prop')
         return null
     }
     return	<React.Fragment>
 
-
-                <div id={`animatedSVG`} className={`animatedSVG`}>
-                    <div 
-                        className={ display === `fixed` ? `displayFixed` : `displayResponsive` }
-                        style={{ 
-                            width: display === `fixed` ? width : `100%`,
-                            height,
-                        }}>
-                        <div id={`scrollingWorld`} className={`scrollingWorld`}>
-                            <ScrollingWorld />
-                        </div>
-                    </div>
+                { getNav() }
+                <a href={`/`} onClick={(e) =>{ 
+                    e.preventDefault()
+                    setDebug(!debug)
+                }}>{ !debug ? null : `Stop debugging`}</a>
+                { debug ? <pre>{ JSON.stringify(options, null, 2) }</pre> : null }
+                
+                <div id={`animatedSVG`} 
+                    className={ display === `fixed` ? `displayFixed` : `displayResponsive` }
+                    style={{ 
+                        width: display === `fixed` ? width : `100%`,
+                        height,
+                    }}>
+                    <div
+                        id={`scrollingWorld`}
+                        style={{
+                            postition: `absolute`,
+                            width: 3200,
+                        }}
+                    >
+                        <ScrollingWorld />
+                    </div>       
     			</div>
 
 
-
-
-                { getNav() }
-                    <a href={`/`} onClick={(e) =>{ 
-                        e.preventDefault()
-                        setDebug(!debug)
-                    }}>{ !debug ? null : `Stop debugging`}</a>
-                    { debug ? <pre>{ JSON.stringify(options, null, 2) }</pre> : null }
 
             </React.Fragment>
 }	
