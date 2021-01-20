@@ -4,19 +4,11 @@
 	and I'm tired of looking at
 */
 
-
-
-
 import React from 'react'
 import { 
     Github,
     Listingslab,
 } from './' 
-
-
-
-
-
 
 
 export const getNav = () => {

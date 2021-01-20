@@ -36,7 +36,7 @@ export default function AnimatedSVG(props) {
     }
     return	<React.Fragment>
 
-                { getNav() }
+                
                 <a href={`/`} onClick={(e) =>{ 
                     e.preventDefault()
                     setDebug(!debug)
