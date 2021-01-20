@@ -1,5 +1,4 @@
 
-
 ![Listingslab's WordPress Plugin](https://raw.githubusercontent.com/listingslab-software/listingslab/develop/listingslab/public/svg/headers/listingslab-plugin.svg)
 
 # Animated SVG

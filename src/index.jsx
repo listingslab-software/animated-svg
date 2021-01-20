@@ -1,8 +1,5 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-// import App from './App';
-
+import React from 'react'
+import ReactDOM from 'react-dom'
 /*
 	Simply copy the entire AnimatedSVG directory to 
 	your project, import it and render it
@@ -10,21 +7,11 @@ import './index.css';
 */
 import {AnimatedSVG} from './AnimatedSVG'
 
-import * as serviceWorker from './serviceWorker';
-
-ReactDOM.render(
-  <React.StrictMode>
-    <AnimatedSVG 
+ReactDOM.render(<AnimatedSVG 
       options={{
       	display: 'fixed', // responsive || fixed
         width: 800,
         height: 450,
-      }}/>
-  </React.StrictMode>,
-  document.getElementById('root')
-);
-
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: https://bit.ly/CRA-PWA
-serviceWorker.unregister();
+      }}/>,
+  document.getElementById('animated-svg')
+)
