@@ -1,48 +1,27 @@
 import pJSON from '../../package.json'
-import React, { useState, useEffect } from 'react'
-import './style.css'
-import {
-    getNav,
-} from './utils'
+import React from 'react'
 import {
     animateScrollingWorld,
     ScrollingWorld,
 } from './'
 
 console.log(`${pJSON.name} ${pJSON.version}`)
-console.log(`${pJSON.description}`)
 
 export default function AnimatedSVG(props) {
     
     const { options } = props
-
-    let display = 'fixed' // responsive || fixed
-    let width = 800
-    let height = 450
-
-    if (options){
-        display = options.display
-        width = options.width
-        height = options.height
-    }
-
-    const [debug, setDebug] = useState(false)
-    useEffect(() => {
+    React.useEffect(() => {
         animateScrollingWorld(`first`, `#scrollingWorld`)    
-    })
-    if (!options) {
-        console.warn ('You need to pass <AnimatedSVG /> an options prop')
-        return null
-    }
-    return	<React.Fragment>
+    }, [options])
+    if (!options) return null
 
-                
-                <a href={`/`} onClick={(e) =>{ 
-                    e.preventDefault()
-                    setDebug(!debug)
-                }}>{ !debug ? null : `Stop debugging`}</a>
-                { debug ? <pre>{ JSON.stringify(options, null, 2) }</pre> : null }
-                
+    const {
+        display,
+        width,
+        height,
+    } = options
+
+    return	<React.Fragment>
                 <div id={`animatedSVG`} 
                     className={ display === `fixed` ? `displayFixed` : `displayResponsive` }
                     style={{ 
@@ -59,8 +38,5 @@ export default function AnimatedSVG(props) {
                         <ScrollingWorld />
                     </div>       
     			</div>
-
-
-
             </React.Fragment>
-}	
+}
